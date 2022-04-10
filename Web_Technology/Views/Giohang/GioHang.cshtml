@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Web_Technology.Models.Giohang>
+
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Giỏ Hàng</h2>
+<table class="talbe">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.productname)</th>
+        <th>@Html.DisplayNameFor(model => model.gia)</th>
+        <th>@Html.DisplayNameFor(model => model.hinh)</th>
+        <th>@Html.DisplayNameFor(model => model.soluong)</th>
+        <th>@Html.DisplayNameFor(model => model.thanhtien)</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.productname)</td>
+            @using (Html.BeginForm("CapnhatGiohang", "GioHang", new { @id = item.Id }))
+            {
+                <td>@String.Format("{0:0,0}", item.gia) VNĐ</td>
+                <td><img src="@item.hinh" width="180px" /></td>
+                <td><input type="number" min="1" name="Soluong" value="@item.soluong" /></td>
+                <td>@Html.DisplayFor(modelItem => item.thanhtien)</td>
+                <td>@Html.ActionLink("Xóa", "XoaGiohang", new { @id = item.Id })</td>
+                <td><input type="submit" value="Cập nhật" class="btn btn-success" /></td>
+            }
+        </tr>
+    }
+    <tr style="font-weight:bold;text-align:left;color:red">
+        <td colspan="2">Số loại:@ViewBag.Tongsoluongsanpham</td>
+        <td colspan="2">Số lượng:@ViewBag.Tongsoluong</td>
+        <td colspan="4">Tổng tiền:@String.Format("{0:0,0}", @ViewBag.Tongtien) VNĐ</td>
+    </tr>
+    <tr style="font-weight:bold;text-align:right;colorb:blue">
+        <td colspan="5">@Html.ActionLink("Xóa giỏ hàng", "XoaTatCaGioHang")</td>
+    </tr>
+    <tr style="font-weight:bold;text-align:right;color:yellow">
+        <td colspan="5">@Html.ActionLink("Đặt hàng", "Dathang", "GioHang")</td>
+    </tr>
+</table>
+

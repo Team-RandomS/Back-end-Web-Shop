@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Web_Technology.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_them1.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-md-4 col-2-sm-6 col-xs-12">
+        <a href="https://localhost:44396/Product/Details/@item.Idproduct"><img src="@item.Imagepicture" alt="Images" width="250px"> </a>
+        <h4>@item.Productname</h4>
+        <h3 style="color :Tomato;">@item.gia</h3>
+        <div class="ratting">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+}

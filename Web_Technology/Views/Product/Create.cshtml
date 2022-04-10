@@ -1,0 +1,33 @@
+﻿@model Web_Technology.ViewModel.ProductViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Tạo mới sản phẩm</h2>
+@using (Html.BeginForm("Create", "Product"))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        @Html.LabelFor(n => n.Productname)
+        @Html.TextBoxFor(n => n.Productname, new { @class = "form-control" })
+        @Html.ValidationMessageFor(n => n.Productname)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(n => n.gia)
+        @Html.TextBoxFor(n => n.gia, new { @class = "form-control" })
+        @Html.ValidationMessageFor(n => n.gia)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(n => n.Imagepicture)
+        @Html.TextBoxFor(n => n.Imagepicture, new { @class = "form-control" })
+        @Html.ValidationMessageFor(n => n.Imagepicture)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(n => n.Idgory)
+        @Html.DropDownListFor(n => n.Idgory, new SelectList(Model.Categories, "Idgory", "Name"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(n => n.Idgory)
+    </div>
+    <button type="submit" value="Save" class="btn btn-primary">Lưu</button>
+}

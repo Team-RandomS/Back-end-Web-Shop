@@ -1,0 +1,27 @@
+﻿@model Web_Technology.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<h2>@Html.DisplayFor(model => model.Productname) </h2>
+
+<div class="col-sm-12 col=md-12">
+    <div class="thumbnail">
+        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" />
+    </div>
+
+    <div class="caption">
+        <p> Giá: @Html.DisplayFor(model => model.gia) </p>
+        <p>
+            <a class="btn btn-success" href="@Url.Action("ThemGioHang","GioHang",new {@id = Model.Idproduct, @strURL = Request.Url.ToString()})">Đặt Mua</a>
+        </p>
+
+    </div>
+</div>
+
+<p>
+    @Html.ActionLink("Trở về trang chủ", "Index")
+</p>

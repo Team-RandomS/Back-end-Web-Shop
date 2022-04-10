@@ -1,0 +1,450 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@latrunghoa
+Team-RandomS
+/
+HTM-WedRandom
+Private
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+HTM-WedRandom/css/Index.css
+@KohlrabiMoon
+KohlrabiMoon UppdateFile: 09/04/2022 9:45PM
+Latest commit d685558 2 hours ago
+History
+1 contributor
+411 lines (303 sloc) 5.78 KB
+/* CSS cho toàn trang  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CSS cho body tag */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+div {
+    display: block;
+}
+
+
+/* Background cho class header */
+
+.header {
+    background: white;
+}
+
+    .header .row {
+        margin-top: 0px;
+    }
+
+.container {
+    /* max-width: 1200px;
+    margin: auto;
+    padding: 0px 25px; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* chỉnh CSS cho navbar */
+
+nav {
+    flex: 1;
+    text-align: right;
+    margin: 25px;
+}
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+            nav ul li a {
+                margin: 10px 10px 10px 0px;
+            }
+
+                nav ul li a img {
+                    display: inline-flex;
+                    margin-left: 0px;
+                }
+
+                nav ul li a form {
+                    display: inline-block;
+                    margin-right: 20px;
+                }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* css cho phần giỏ hàng */
+
+.number {
+    /* position: absolute; */
+    top: -25px;
+    left: -15px;
+    z-index: 20;
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+    background: #ea1c00;
+}
+
+.navbar-top-header {
+    max-width: 24px;
+    margin-right: 8px;
+    max-height: 25px;
+}
+
+
+/* css cho menu produce */
+
+.listmenu {
+    display: flex;
+}
+
+    .listmenu li {
+        position: relative;
+    }
+
+
+    /* css cho phần list laptop */
+
+    .listmenu ul.sub-menu-laptop {
+        position: absolute;
+        background-color: rgb(230, 230, 250);
+        padding: 15px;
+        list-style: none;
+        width: 200px;
+        display: none;
+    }
+
+    .listmenu li:hover ul.sub-menu-laptop {
+        display: block;
+        left: 200px;
+        border-top: 50px;
+    }
+
+    .listmenu ul.sub-menu-laptop a {
+        padding: 8px 15px;
+    }
+
+    .listmenu ul.sub-menu-laptop li:last-child a {
+        border: none;
+    }
+
+    .listmenu ul.sub-menu-laptop li:hover a {
+        border-bottom: 1px solid #ea1c00;
+    }
+
+    .listmenu ul.sub-menu-laptop ul.sub-menu-laptop {
+        left: 200px;
+    }
+
+
+    /* thiết lập border khi hover */
+
+    .listmenu > li > a {
+        position: relative;
+    }
+
+        .listmenu > li > a::before {
+            content: "";
+            height: 4px;
+            width: 100%;
+            background: #f00;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+    .listmenu > li:hover > a::before {
+        width: 0px;
+    }
+
+
+    /* end border khi hover */
+
+
+    /* end css phần list laptop */
+
+
+    /* css cho phần list Loa & Tai nghe */
+
+    .listmenu ul.sub-menu-loa-tainghe {
+        position: absolute;
+        background-color: aquamarine;
+        padding: 15px;
+        list-style: none;
+        width: 200px;
+        border-bottom: 1px solid #333;
+        display: none;
+    }
+
+    .listmenu li:hover ul.sub-menu-loa-tainghe {
+        display: block;
+        left: 300px;
+        border-top: 50px;
+    }
+
+    .listmenu ul.sub-menu-loa-tainghe a {
+        padding: 8px 15px;
+        border-bottom: 1px solid #333;
+    }
+
+    .listmenu ul.sub-menu-loa-tainghe li:last-child a {
+        border: none;
+    }
+
+    .listmenu ul.sub-menu-loa-tainghe li:hover a {
+        border-bottom: 1px solid #ea1c00;
+    }
+
+    .listmenu ul.sub-menu-loa-tainghe ul.sub-menu-loa-tainghe {
+        left: 200px;
+    }
+
+
+    /* thiết lập border khi hover */
+
+    .listmenu > li > a {
+        position: relative;
+    }
+
+        .listmenu > li > a::before {
+            content: "";
+            height: 4px;
+            width: 100%;
+            background: #f00;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+    .listmenu > li:hover > a::before {
+        width: 0px;
+    }
+
+
+    /* end css cho phần list Loa & Tai nghe */
+
+
+    /* Css cho phần linh kiện */
+
+
+    /* css cho phần list Loa & Tai nghe */
+
+    .listmenu ul.sub-menu-linhkien {
+        position: absolute;
+        background-color: aquamarine;
+        padding: 15px;
+        list-style: none;
+        width: 200px;
+        border-bottom: 1px solid #333;
+        display: none;
+    }
+
+    .listmenu li:hover ul.sub-menu-linhkien {
+        display: block;
+        left: 300px;
+        border-top: 50px;
+    }
+
+    .listmenu ul.sub-menu-linhkien a {
+        padding: 8px 15px;
+        border-bottom: 1px solid #333;
+    }
+
+    .listmenu ul.sub-menu-linhkien li:last-child a {
+        border: none;
+    }
+
+    .listmenu ul.sub-menu-linhkien li:hover a {
+        border-bottom: 1px solid #ea1c00;
+    }
+
+    .listmenu ul.sub-menu-linhkien ul.sub-menu-linhkien {
+        left: 200px;
+    }
+
+
+    /* thiết lập border khi hover */
+
+    .listmenu > li > a {
+        position: relative;
+    }
+
+        .listmenu > li > a::before {
+            content: "";
+            height: 4px;
+            width: 100%;
+            background: #f00;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+    .listmenu > li:hover > a::before {
+        width: 0px;
+    }
+
+
+/* end css phần linh kiện */
+
+
+/* css cho banner */
+
+.row {
+    display: flex;
+}
+
+.col-2 {
+    display: flex;
+    right: 70px;
+}
+
+    .col-2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* end css cho banner */
+
+
+/* css cho phần hotsale */
+
+.hotsale {
+    padding: 25px;
+    size: auto;
+}
+
+.ratting .fa {
+    color: #ff523b;
+}
+
+.bi-thermometer-sun {
+    width: auto;
+    color: red;
+}
+
+
+/* end CSS hotsale */
+
+
+/* css cho phần apple new */
+
+.category-apple img {
+    margin: 0px 320px;
+}
+
+
+/* end */
+
+
+/* css cho phần footer */
+
+.footer {
+    background: #f6f6f6;
+    padding: 20px 0;
+    display: inline;
+}
+
+#user1,
+#user2,
+#user3 {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.col-sm-12 {
+    width: 100%;
+    float: left;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer p {
+    margin: 12px 0;
+    color: #777;
+}
+
+.footer hr {
+    display: flex;
+}
+
+.copyright {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.container-footer {
+    display: flex;
+}
+
+
+/* end css footeer */
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
