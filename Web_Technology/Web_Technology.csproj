@@ -205,6 +205,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\Index.css" />
+    <Content Include="Content\css\Kichthuoc.css" />
     <Content Include="Content\Images\apple\macbook_air_m1.png" />
     <Content Include="Content\Images\apple\macbook_pro_13_m1.png" />
     <Content Include="Content\Images\apple\macbook_pro_14_2021_m1_pro.png" />
@@ -276,6 +277,10 @@
     <Content Include="Views\Giohang\GioHang.cshtml" />
     <Content Include="Views\Giohang\GioHangPartial.cshtml" />
     <Content Include="Views\Giohang\DatHang.cshtml" />
+    <Content Include="Views\Product\DetailAdmin.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Shared\_Layout_them.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

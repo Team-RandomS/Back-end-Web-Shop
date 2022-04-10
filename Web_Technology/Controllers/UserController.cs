@@ -37,7 +37,7 @@ namespace Web_Technology.Controllers
                 kh.dienthoai = sdt;
                 data.Khachhangs.Add(kh);
                 data.SaveChanges();
-                return RedirectToAction("About", "Home");
+                return RedirectToAction("Index", "Product");
             }
             return this.Dangky();
         }
@@ -60,7 +60,7 @@ namespace Web_Technology.Controllers
             {
                 ViewData["Login"] = "Email hoặc mật khẩu không hợp lệ";
             }
-            return RedirectToAction("About", "Home");
+            return RedirectToAction("Index", "Product");
         }
     }
 }

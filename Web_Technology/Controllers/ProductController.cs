@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -21,6 +22,20 @@ namespace Web_Technology.Controllers
         }
 
         public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Product product = db.Products.Find(id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
+
+        public ActionResult DetailAdmin(int? id)
         {
             if (id == null)
             {
@@ -63,5 +78,7 @@ namespace Web_Technology.Controllers
             db.SaveChanges();
             return RedirectToAction("Index", "Product");
         }
+
+        
     }
 }

@@ -1,0 +1,136 @@
+﻿h1 {
+    width:1310px;
+    -webkit-animation: colorchange 10s infinite;
+    animation: colorchange 10s infinite;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        background: #FFFF00;
+    }
+    25% {
+        background: #FF7F00;
+    }
+    50% {
+        background: #C60000;
+    }
+    75% {
+        background: #CD00CD;
+    }
+    100% {
+        background: #C0FF3E;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background: #FFFF00;
+    }
+    25% {
+        background: #FF7F00;
+    }
+    50% {
+        background: #C60000;
+    }
+    75% {
+        background: #CD00CD;
+    }
+    100% {
+        background: #C0FF3E;
+    }
+    h1 {
+        background-color: aliceblue;
+    }
+}
+
+p{
+    text-align:center;
+}
+
+.Trangchu {
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.Create {
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Dangnhap {
+    float: right;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.DetailAdmin {
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* css cho phần footer */
+
+.footer {
+    background: #f6f6f6;
+    padding: 20px 0;
+    display: inline-flex;
+    text-align: left;
+    /* margin: 20px; */
+}
+
+#user1,
+#user2,
+#user3 {
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.col-sm-12 {
+    width: 100%;
+    float: left;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer p {
+    margin: 12px 0;
+    color: #333;
+}
+
+.footer hr {
+    display: flex;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-footer {
+    display: flex;
+    padding: 25px;
+}
+
+
+/* end css footeer */

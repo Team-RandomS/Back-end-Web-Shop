@@ -6,9 +6,9 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css_them1")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
+    <img src="" alt="Alternate Text" />
     <div class="header">
         <!-- Container -->
         <div class="container">
@@ -30,6 +30,7 @@
                             <a href="https://localhost:44396/User/Dangky">ĐĂNG KÝ</a>
                             <a href="https://localhost:44396/User/Dangnhap">ĐĂNG NHẬP</a>
                             @Html.Partial("~/Views/GioHang/GioHangPartial.cshtml")
+                            <a href="https://localhost:44396/Home/Index">ADMIN</a>
 
                         </li>
                     </ul>
@@ -78,6 +79,9 @@
         </div>
         <!-- End Container -->
     </div>
+    <div class="container body-content">
+        <hr />
+    </div>
     <!-- End Headder -->
     <!-- Categories apple new -->
     <div class="category-apple">
@@ -87,6 +91,9 @@
     </div>
     <div class="smail-container">
 
+    </div>
+    <div class="container body-content">
+        <hr />
     </div>
     <!-- End Categories apple new -->
     <!-- Categories Hotsale Display-->
@@ -163,7 +170,9 @@
             </div>
         </div>
     </div>
-
+    <div class="container body-content">
+        <hr />
+    </div>
     <div class="product">
 
         <h1 class="tille">
@@ -175,9 +184,10 @@
             </i>Sản Phẩm
         </h1>
     </div>
-
-    @RenderBody()
-
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
     <!-- End Categories Hotsale -->
     <!-- Foooter -->
     <div class="footer">
@@ -216,16 +226,17 @@
                 <p>
                     Mua Laptop Gaming, thiết bị âm thanh như tai nghe và loa hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận nhiều ưu đãi hấp dẫn.
                 </p>
-                </p>
+
+                <div id="user3" class="footer-col-3">
+                    <h3>Fanpage</h3>
+                    <div class="face-content">
+                        <a href="https://www.facebook.com/profile.php?id=100006780525714"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="user3" class="footer-col-3">
-        <h3>Fanpage</h3>
-        <div class="face-content">
-            <a href="https://www.facebook.com/profile.php?id=100006780525714"></a>
-        </div>
-    </div>
+   
 
 
     @Scripts.Render("~/bundles/bootstrap")

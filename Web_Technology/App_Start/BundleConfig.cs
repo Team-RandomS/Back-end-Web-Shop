@@ -24,6 +24,8 @@ namespace Web_Technology
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/css/Kichthuoc.css",
+
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/css_them1").Include(

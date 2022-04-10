@@ -1,10 +1,10 @@
 ﻿@model Web_Technology.Models.Khachhang
 @{
     ViewBag.Title = "Dangky";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout_them.cshtml";
 }
 
-<h2>Đăng ký tài khoản</h2>
+<h2 style="text-align:center">Đăng ký tài khoản</h2>
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -53,4 +53,3 @@
         </div>
     </div>
 }
-
