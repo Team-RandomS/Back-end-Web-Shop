@@ -9,10 +9,10 @@
 
 <div class="col-sm-12 col=md-12">
     <div class="thumbnail">
-        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="350px" height="70px" />
+        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="600px" height="300px" />
     </div>
 
-    <div class="caption" style="font-size:large">
+    <div class="caption" style="font-size:x-large">
         <p> Giá: @Html.DisplayFor(model => model.gia) </p>
         <p>
             <a class="btn btn-success" href="@Url.Action("Edit","Home",new {@id = Model.Idproduct, @strURL = Request.Url.ToString()})">Edit</a>

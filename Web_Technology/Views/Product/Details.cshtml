@@ -4,17 +4,20 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout_them.cshtml";
 }
+
 <h2>@Html.DisplayFor(model => model.Productname) </h2>
 
 <div class="col-sm-12 col=md-12">
     <div class="thumbnail">
-        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="350px" height="300px" />
+        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="400px" height="300px" style = "text algert: center;"  />
     </div>
 
-    <div class="caption" style="font-size:large">
+    <div class="caption" style="font-size:large; text-align:center; padding:0px 640px;">
         <p> Giá: @Html.DisplayFor(model => model.gia) </p>
         <p>
-            <a class="btn btn-success" href="@Url.Action("ThemGioHang","GioHang",new {@id = Model.Idproduct, @strURL = Request.Url.ToString()})">Đặt Mua</a>
+            <a class="btn btn-success" href="@Url.Action("ThemGioHang","GioHang",new {@id = Model.Idproduct, @strURL = Request.Url.ToString()})">
+            Đặt Mua
+            </a>
         </p>
 
     </div>

@@ -1,5 +1,5 @@
 ﻿h1 {
-    width:1310px;
+    width: 1310px;
     -webkit-animation: colorchange 10s infinite;
     animation: colorchange 10s infinite;
 }
@@ -8,15 +8,19 @@
     0% {
         background: #FFFF00;
     }
+
     25% {
         background: #FF7F00;
     }
+
     50% {
         background: #C60000;
     }
+
     75% {
         background: #CD00CD;
     }
+
     100% {
         background: #C0FF3E;
     }
@@ -26,25 +30,30 @@
     0% {
         background: #FFFF00;
     }
+
     25% {
         background: #FF7F00;
     }
+
     50% {
         background: #C60000;
     }
+
     75% {
         background: #CD00CD;
     }
+
     100% {
         background: #C0FF3E;
     }
+
     h1 {
         background-color: aliceblue;
     }
 }
 
-p{
-    text-align:center;
+p {
+    text-align: center;
 }
 
 .Trangchu {
@@ -102,6 +111,10 @@ p{
     width: 100%;
     float: left;
 }
+
+    .col-sm-12 .col-md-12 {
+        text-align: center;
+    }
 
 .footer-col-1,
 .footer-col-2,

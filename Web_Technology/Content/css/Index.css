@@ -47,9 +47,15 @@ div {
 }
 
 .navbar {
+    width: 1100px;
+    height: 50px;
+    background-color: #DDC488;
+    border: 2px solid #CD6600;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 0px 60px;
+    margin-bottom: 10px;
 }
 
 
@@ -361,6 +367,12 @@ ul.sub-menu-linhkien li {
     height: auto;
 }
 
+.apple{
+    float:left;
+    width: 1300px;
+    height: 400px;
+}
+
 
 /* end css cho banner */
 
@@ -370,6 +382,7 @@ ul.sub-menu-linhkien li {
 .hotsale {
     padding: 25px;
     size: auto;
+    width: 1300px;
 }
 
 .ratting .fa {
@@ -424,9 +437,12 @@ h1.tille {
 
 .footer {
     background: #f6f6f6;
-    padding: 20px 0;
+    float: left;
     display: inline;
     text-align: left;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    width: 1240px;
     /* margin: 20px; */
 }
 
@@ -472,4 +488,318 @@ h1.tille {
 }
 
 
-/* end css footeer */
+/* ----------------------*/
+
+.laptop {
+    position: relative;
+    display: inline-block;
+}
+
+.laptopbtn {
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-laptop {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 120px;
+    left: 126px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .menu-laptop a {
+        color: #FF00FF;
+        width: 165px;
+        background-color: #CDCDB4;
+        border: 1px solid #66CD00;
+        border-radius: 5px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+.laptop a:hover {
+    color: #ADFF2F;
+}
+
+.laptop:hover .menu-laptop {
+    display: inline-block;
+}
+
+
+/**/
+
+.banphim {
+    position: relative;
+    display: inline-block;
+}
+
+.banphimbtn {
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-banphim {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 120px;
+    left: 126px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .menu-banphim a {
+        color: #FF00FF;
+        width: 147px;
+        background-color: #CDCDB4;
+        border: 1px solid #66CD00;
+        border-radius: 5px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+.banphim a:hover {
+    color: #ADFF2F;
+}
+
+.banphim:hover .menu-banphim {
+    display: inline-block;
+}
+
+
+/**/
+
+.chuot {
+    position: relative;
+    display: inline-block;
+}
+
+.chuotbtn {
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-chuot {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 120px;
+    left: 126px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .menu-chuot a {
+        color: #FF00FF;
+        width: 155px;
+        background-color: #CDCDB4;
+        border: 1px solid #66CD00;
+        border-radius: 5px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+.chuot a:hover {
+    color: #ADFF2F;
+}
+
+.chuot:hover .menu-chuot {
+    display: inline-block;
+}
+
+
+/**/
+
+.manhinh {
+    position: relative;
+    display: inline-block;
+}
+
+.manhinhbtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/**/
+
+.loa {
+    position: relative;
+    display: inline-block;
+}
+
+.loabtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.loa:hover {
+    color: #ADFF2F;
+}
+
+
+/**/
+
+.linhkien {
+    position: relative;
+    display: inline-block;
+}
+
+.linhkienbtn {
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    float: left;
+    color: #C60000;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-linhkien {
+    display: none;
+    position: absolute;
+    background-color: #e9d8f4;
+    min-width: 120px;
+    left: 126px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .menu-linhkien a {
+        color: #FF00FF;
+        width: 120px;
+        background-color: #CDCDB4;
+        border: 1px solid #66CD00;
+        border-radius: 5px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+.linhkien a:hover {
+    color: #ADFF2F;
+}
+
+.linhkien:hover .menu-linhkien {
+    display: inline-block;
+}
+
+
+/**/
+
+.Left {
+    float: left;
+    border: 2px solid #66CD00;
+    background-color: #CDCDB4;
+    border-radius: 10px;
+    width: 130px;
+    height: 300px;
+}
+
+.Center {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 800px;
+    height: 300px;
+}
+
+.Right {
+    float: left;
+    margin-left: 10px;
+    border: 2px solid none;
+    border-radius: 10px;
+    width: 276px;
+    height: 300px;
+}
+
+.duongvien {
+    float: left;
+    width: 1200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-left {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    width: 400px;
+    height: 160px;
+}
+
+.footer-center {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 400px;
+    height: 160px;
+}
+
+.footer-right {
+    float: left;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-left: 15px;
+    width: 400px;
+    height: 160px;
+}
