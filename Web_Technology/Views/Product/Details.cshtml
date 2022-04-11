@@ -8,11 +8,11 @@
 <h2>@Html.DisplayFor(model => model.Productname) </h2>
 
 <div class="col-sm-12 col=md-12">
-    <div class="thumbnail">
-        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="400px" height="300px" style = "text algert: center;"  />
+    <div class="thumbnail" style = "text-align: center;">
+        <img src="@Html.DisplayFor(model => model.Imagepicture)" alt="thumbnail" width="400px" height="300px"  />
     </div>
 
-    <div class="caption" style="font-size:large; text-align:center; padding:0px 640px;">
+    <div class="caption" style="font-size:large; text-align:center; padding:10px 580px;">
         <p> Giá: @Html.DisplayFor(model => model.gia) </p>
         <p>
             <a class="btn btn-success" href="@Url.Action("ThemGioHang","GioHang",new {@id = Model.Idproduct, @strURL = Request.Url.ToString()})">
